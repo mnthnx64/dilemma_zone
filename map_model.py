@@ -252,7 +252,7 @@ class MapModel(object):
         Load the map image. It always has the name "map_local.png".
         '''
 
-        fn = folder + '/map_local.png'
+        fn = folder + '/seg/map_local_seg.png'
         self.local_map_image = cv2.imread(fn)
 
     def save_one_para_csv(self, folder, para_name):
